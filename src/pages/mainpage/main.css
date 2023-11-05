@@ -1,0 +1,61 @@
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem 1.5rem;
+    border: 8px solid var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 2rem;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.15),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.15),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+    background: var(--bg-color);
+}
+
+.banner{
+    position: relative;
+    width:80%;
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:  -5px -5px 15px rgba(255, 255, 255, 0.15),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 1s;
+}
+
+@media screen and (max-width:767px) {
+    .banner,
+    .banner.active{
+        width: 100% !important;
+    }
+}
+
+.banner.active{
+    width:93%;
+}
+
+.headerConatiner{
+    height: 70px;
+}
+
+
+.currentSection {
+    animation: translate 500ms ease-in;
+}
+
+@keyframes translate {
+    from { 
+        transform: translate(0, 200vh); 
+    }
+    to {
+        transform: translate(0, 0vh);
+    }
+}

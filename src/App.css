@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* ********************** Start Global Style ********************** */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --text-color: #e4e3f6;
+
+  --primary-color:#0a0c2f;
+  --secondary-color:#201268;
+
+  --bg-color: #0a0c2f;
+}
+
+h1,
+h2,
+h3,
+p
+{
+  color: var(--text-color);
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+ul,
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+/* ********************** End Global Style ********************** */
